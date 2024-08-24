@@ -1,0 +1,41 @@
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>{{appTitle}}</title>
+    <link rel="stylesheet" href="/stylesheets/style.css" />
+  </head>
+
+  <body>
+
+    <nav id="nav-bar">
+      <div class="dropdown">
+        <button class="dropbtn"> <img src="/images/menu.png" width="34" height="34"></button>
+        <div class="dropdown-content">
+          <a href="/">Home</a>
+          <a href="/beaches">List of the beaches</a>
+          <a href="/new">Add a new Beach</a>
+          <a href="/userprofile">User Profile</a>
+        </div>
+      </div>
+
+      <div id="to-right">
+        <div>
+        <a class="nav-link" href="/signup">Sign up</a></div>
+        <div>
+        <a class="nav-link" href="/login">Login</a>
+
+        <!--<form id="logout-form" action="/logout" method="POST">
+           <button>Logout</button>-->
+      </div>
+      </div>
+    </nav>
+
+    {{{body}}}
+
+    <script src="/js/script.js"></script>
+  </body>
+
+</html>

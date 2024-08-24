@@ -1,0 +1,18 @@
+<body id="update-beach">
+<!-- update-beach.hbs -->  
+<div id="information-to-update">
+  <h5>Edit Beach: {{beach.name}}</h5>
+  <br>
+<form method="POST" action="/beaches/{{beach._id}}/edit">
+    <label>Name:</label><br>
+    <input type="text" name="name" placeholder="Name" value="{{beach.name}}"> <br>
+    <label>Description:</label><br>
+    <input type="text" name="description" placeholder="Description" value="{{beach.description}}"> <br>
+    <label>Image:</label><br />
+    <input type="file" name="beach-image" /><br/>
+    <div class="update-beach-button">
+    <button type="submit" name="" id="submit">Edit</button>
+    </div>
+</form>
+</div>
+</body>

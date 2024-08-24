@@ -1,0 +1,22 @@
+<!-- list-beaches.hbs -->
+<body id="list-beaches">
+
+  <h3>SEE OUR SANDY BEACHES</h3>
+  <br>
+<div id="index-cards">
+  {{#each beaches}}
+    <div id="list-beaches-cards">
+<div class="beach-picture">
+<img src="{{imageUrl}}" width="255" height="255"></div>
+<div class="beach-info">
+      <a href="/beaches/{{this._id}}">{{name}}</a>
+      <br>
+      <div class="beach-actions">
+      <a href="/beaches/{{this._id}}/delete">Delete</a>
+      <a href="/beaches/{{this._id}}/edit">Edit</a>
+      </div>
+      </div>
+  </div>  
+  {{/each}}
+</div>
+</body>

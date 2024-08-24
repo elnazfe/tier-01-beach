@@ -1,0 +1,549 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0px;
+}
+
+#nav-bar {
+  width: 1512px;
+  height: 57px;
+  background-color: #337680;
+  position: fixed;
+  top: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-items: flex-end;
+  justify-content: space-around;
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+  position: fixed;
+  top: 2px;
+  left: 10px;
+}
+.dropbtn {
+  background-color: #337680;
+  color: white;
+  padding: 5px;
+  font-size: 20px;
+  border: none;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 180px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 9999;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+  background-color: #337680;
+}
+
+#to-right {
+  display: flex;
+  flex-direction: row;
+  justify-items: end;
+  margin-left: 50px;
+  position: fixed;
+  right: 10px;
+  align-items: center;
+}
+.nav-link {
+  margin: 20px;
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 20px;
+}
+#homepage-background-image{
+  width: 1512px;
+  height: 855px;
+  background-image: url(/images/homepage-image.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: fixed;
+  align-self: center;
+  z-index: -1;
+}
+.first-page-text {
+  width: 575px;
+  height: 163px;
+  background-color: #f7f7f775;
+  display: flex;
+  flex-direction: column;
+  color: #f5f5f5;
+  position: fixed;
+  top: 527px;
+  left: 39px;
+}
+.first-page-text h1 {
+  padding-left: 20px;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 28px;
+  margin-bottom: 0;
+}
+.first-page-text p {
+  padding-left: 20px;
+  margin-top: 0;
+  font-size: 18px;
+  font-weight: 200;
+  color: #4b5d60;
+}
+.homepage-sudo-buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.homepage-sudo-buttons a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 20px;
+  background-color: #337680;
+  padding: 10px 50px;
+  border-radius: 5px;
+}
+#sign-up-page {
+  width: 1512px;
+  height: 700px;
+  background-image: url(/images/sign-up-background.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: fixed;
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: -1;
+}
+#sign-up-page h1,
+#login-page h1 {
+  font-size: 48;
+  color: #ffffff;
+  position: fixed;
+  top: 117;
+  margin-bottom: 30px;
+  font-stretch: semi-condensed;
+}
+
+#form-signin {
+  width: 414px;
+  height: 346px;
+  background-color: #f7f7f775;
+  display: flex;
+  flex-direction: column;
+  color: #f5f5f5;
+  position: fixed;
+  top: 216;
+  left: 549;
+  display: flex;
+  align-self: center;
+  justify-self: center;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#form-signin label,
+#login-form label {
+  font-size: 20px;
+  color: #000000;
+  padding-bottom: 20px;
+}
+
+#form-signin input,
+#login-form input {
+  width: 318px;
+  height: 47px;
+  border: #ffffff;
+  margin: 10px 0px;
+}
+#form-signin button,
+#login-form button {
+  color: #ffffff;
+  width: 118px;
+  height: 37px;
+  border-style: none;
+  background-color: #337680;
+  font-size: 15px;
+  border-radius: 5px;
+  position: fixed;
+  left: 699;
+}
+#login-page {
+  width: 1512px;
+  height: 700px;
+  background-image: url(/images/login-page-image.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: fixed;
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: -1;
+}
+#login-form {
+  width: 414px;
+  height: 346px;
+  background-color: #f7f7f775;
+  display: flex;
+  flex-direction: column;
+  color: #f5f5f5;
+  position: fixed;
+  top: 216;
+  left: 549;
+  display: flex;
+  align-self: center;
+  justify-self: center;
+  justify-content: space-around;
+  align-items: center;
+}
+#create-new-beach, #update-beach {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+}
+
+#new-beach, #information-to-update {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border: 2px solid black;
+  padding: 10px;
+}
+
+#new-beach input, #information-to-update input {
+  width: 200px;
+  height: 37px;
+  margin-bottom: 10px;
+  border: #000000;
+}
+
+#new-beach button, #information-to-update button {
+  color: #ffffff;
+  width: 118px;
+  height: 37px;
+  border-style: none;
+  background-color: #337680;
+  font-size: 15px;
+  border-radius: 5px;
+  align-self: center;
+}
+
+#new-beach label, #information-to-update label {
+  font-size: 20;
+  color: #000000;
+  padding-bottom: 20px;
+}
+.new-beach-text{
+    background-color: #E8AA42;
+    margin: 5px;
+}
+#new-beach div {
+  color: #ffffff;
+  text-align: center;
+  margin: 5px;
+}
+#new-beach h5, #information-to-update h5 {
+  font-size: 25;
+  font-weight: 300;
+  padding: 0;
+}
+.new-beach-submit {
+  justify-content: center;
+  background-color: white;
+}
+
+#list-beaches{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top:40px;
+  flex-wrap: nowrap;
+}
+#list-beaches h3{
+  font-size: 56;
+  font-weight: 300;
+}
+#index-cards{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#list-beaches-cards{
+  width: 270px;
+  height: 355;
+  border: 2px solid rgb(199, 198, 198);
+  margin: 10px 20px;
+}
+.beach-picture{
+  height: 255px;
+  width: 255px;
+}
+.beach-info {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+
+
+}
+.beach-info a {
+  text-decoration: none;
+  color: #000000;
+  text-align: center;
+}
+.beach-actions{
+  display: flex;
+  flex-direction: row;
+  justify-content:space-around;
+  justify-items: center;
+  margin-top: 5px;
+}
+
+.beach-info a {
+  text-decoration: none;
+  color: #000000;
+  text-align: center;
+}
+
+.beach-info a:hover {
+  text-decoration: none;
+  color:#E8AA42
+}
+
+#user-profile {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 70px;
+}
+
+#user-profile h2{
+  font-weight: 300;
+  font-size: 46px;
+  margin-top: 0;
+}
+.user-actions button{
+  margin-right: 7%;
+  text-decoration: none;
+  color: #ffffff;
+  padding: 5px 15px;
+  background-color:#E8AA42;
+  border-radius: 5px;
+}
+#logout-form{
+  margin-right: 25px;
+}
+
+.user-details{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 80%;
+  justify-content: center;
+ 
+}
+.user-picture{
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.user-picture h5{
+  margin-top: 0;
+  font-size: 20;
+  font-weight: 200;
+
+
+}
+.user-info{
+  width: 50%;
+  padding-left: 2%;
+ 
+}
+
+.user-info h5 {
+  font-size: 20;
+  font-weight: 200;
+}
+.user-details h4{
+ font-weight: 200;
+ font-size: 26px;
+}
+
+.user-actions{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-items: center;
+  margin: 20px;
+}
+
+#beach-details, #update-beach {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 70px;
+}
+.beach-changes, .user-actions{
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  justify-content: end;
+  margin-right: 3%;
+}
+.beach-changes a{
+  margin-left: 1%;
+  text-decoration: none;
+  color: #ffffff;
+  padding: 5px 15px;
+  background-color:#E8AA42;
+  border-radius: 5px;
+}
+.beach-changes a:hover, .beach-image-favourites button:hover {
+  color: black;
+}
+
+.central-beach-description{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
+.beach-image-favourites{
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  margin-left: 10%;
+  flex-direction: column;
+
+}
+.beach-detail-information{
+  width: 60%;
+  padding-left: 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.beach-detail-information p {
+  width: 60%;
+  text-align: justify;
+  font-weight: 200;
+}
+.beach-detail-information h3{
+  font-weight: 300;
+  font-style: italic;
+  font-size: 30;
+  margin-bottom: 0;
+}
+
+.beach-image-favourites button{
+  color: #ffffff;
+  width: 170px;
+  height: 37px;
+  border-style: none;
+  background-color:#E8AA42;
+  font-size: 15px;
+  border-radius: 5px;
+}
+.beach-review, #image-gallery{
+  width: 80%;
+  margin-top: 2%;
+  display: flex;
+  flex-direction: column;
+  padding: 2%;
+  padding-bottom: 0;
+  border-top: 1px solid rgb(162, 162, 162);
+}
+.beach-review label {
+  font-size: 15px;
+  font-weight: 300;
+}
+.beach-review h4, #image-gallery h4{
+  font-weight: 400;
+  margin: 0;
+}
+
+.beach-review button, #submit {
+  color: #ffffff;
+  width: 140px;
+  height: 37px;
+  border-style: none;
+  background-color:#337680;
+  font-size: 15px;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+.beach-review button:hover {
+  color:#E8AA42;
+}
+
+.update-beach-button{
+  display: flex;
+  justify-content: center;
+}
+
+.beach-image-favourites form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.beach-picture{
+  display: flex;
+  justify-items: center;
+  margin-left: 7.5px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+#gallery {
+  display: flex;
+  flex-direction: row;
+}
+
+#gallery img {
+  margin: 20px 10px 0px 0px;
+}
+
+.user-info a {
+  text-decoration: none;
+  color: #000000;
+  font-size: 16;
+  font-weight: 300;
+}
+
+.user-info a:hover {
+  color: #337680;
+}
+
